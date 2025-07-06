@@ -14,6 +14,7 @@ url: "https://yourusername.github.io" # your GitHub Pages URL
 markdown: kramdown
 theme: minima
 permalink: /blog/:year/:month/:day/:title/
+remote_theme: "mmistakes/minimal-mistakes"
 
 # Collections
 collections:
