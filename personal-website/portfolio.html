@@ -1,0 +1,22 @@
+---
+layout: default
+title: Portfolio
+permalink: /portfolio/
+---
+
+<!-- Tailwind CDN for quick prototyping -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+<h1 class="text-3xl font-bold mb-8 text-center">Portfolio</h1>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+  {% assign projects = site.portfolio | default: site.data.portfolio %}
+  {% for project in projects %}
+    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col">
+      <h2 class="text-xl font-semibold mb-2">{{ project.title }}</h2>
+      <p class="mb-4 text-gray-700">{{ project.description }}</p>
+      <a href="{{ project.link }}" class="mt-auto inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition" target="_blank">View Project</a>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- Example: Add projects in _data/portfolio.yml or as markdown files in _portfolio/ -->

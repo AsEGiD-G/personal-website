@@ -1,0 +1,19 @@
+# Jekyll .gitignore
+_site/
+.sass-cache/
+.jekyll-metadata
+.jekyll-cache/
+.bundle/
+vendor/
+node_modules/
+.DS_Store
+*.gem
+*.log
+*.swp
+*.swo
+*.tmp
+*.bak
+*.env
+.env.*
+# VS Code
+.vscode/

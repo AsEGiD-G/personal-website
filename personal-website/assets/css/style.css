@@ -1,0 +1,53 @@
+/* Main styles for personal website */
+
+.hero {
+  padding: 3rem 0;
+  text-align: center;
+  background: #f8f9fa;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.hero a {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #007acc;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about {
+  max-width: 700px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.links a {
+  padding: 1rem 2rem;
+  background: #eee;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
